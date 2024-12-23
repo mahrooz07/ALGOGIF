@@ -40,7 +40,7 @@ ALGOGIF is an innovative project designed to help learners understand and visual
 <h2>Binary Tree:</h2> Visualizes binary tree creation, traversal, and updates with parent-child relationships connected by lines.
 
 
-<h1>The output of these GIFs are store in the static folder or else we can change the folder in the given code in gifgenerator.py</h1>
+<h3>The output of these GIFs are store in the static folder or else we can change the folder in the given code in gifgenerator.py</h3>
 
 
 <p>
