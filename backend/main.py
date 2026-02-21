@@ -6,7 +6,15 @@ from animator import execute_and_render
 import os
 
 app = FastAPI()
+from fastapi.middleware.cors import CORSMiddleware
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], # In production, change this to your React app's domain
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 # Mount the generated folder so the frontend can access the GIFs via URL
 app.mount("/animations", StaticFiles(directory="generated_animations"), name="animations")
 
